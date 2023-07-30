@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Blocked URL Viewer</title>
+  <link rel="icon" type="image/png" href="key.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>URL Viewer</h1>
+  <label for="urlInput">Gib eine URL ein:</label>
+  <input type="text" id="urlInput">
+  <button onclick="showInIframe()">Anzeigen</button>
+  <br>
+  <iframe src="" id="urlIframe" style="position:fixed; top:10; left:0; bottom:0; right:0; width:600; height:600; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
+
+  <script>
+    function showInIframe() {
+      const url = document.getElementById("urlInput").value;
+      if (CheckIfHTTPS(url)) 
+      {
+        setIFrame(url);
+      } 
+      else 
+      {
+        if (CheckIfHTTP(url)) 
+        {
+          var searchMask = "http://";
+          var regEx = new RegExp(searchMask, "ig");
+          var replaceMask = "";
+          const CutUrl = (url).replace(regEx, replaceMask);
+          const HttpUrl = 'https://' + CutUrl;
+          setIFrame(HttpUrl);
+        } 
+        else 
+        {
+            alert(unescape("Bitte gib eine g%FCltige HTTPS-URL ein.\nVeruche vieleicht ein Https:// vor deine URL zu setzen."));
+        }
+      }
+    }
+
+    function setIFrame(input) 
+    {
+      const iframe = document.getElementById("urlIframe");
+      iframe.src = (input);
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.zIndex = "999999";
+      iframe.style.top = "0px";
+      history.pushState({}, null, "");
+    }
+
+    function CheckIfHTTP(input) 
+    {
+      const urlPattern = /^http:\/\/.+$/i;
+      return urlPattern.test(input);
+    }
+
+    function CheckIfHTTPS(input) 
+    {
+      const urlPattern = /^https:\/\/.+$/i;
+      return urlPattern.test(input);
+    }
+    
+    window.addEventListener("popstate", function(event) {
+      const iframe = document.getElementById("urlIframe");
+      iframe.style.width = "0px";
+      iframe.style.height = "0px";
+      iframe.style.top = "10px";
+      iframe.zIndex = "-1"
+      iframe.src = "";
+    });
+  </script>
+</body>
+</html>
