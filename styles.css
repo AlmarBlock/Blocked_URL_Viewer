@@ -9,6 +9,7 @@ body{
     text-align: center;
 }
 input{
+    margin-top: 10px;
     font-size: 24px;
     height: 30px;
     color: white;
@@ -17,10 +18,24 @@ input{
     border-radius: 2px;
 }
 button{
+    margin-top: 10px;
     font-size: 24px;
     height: 30px;
     color: white;
     background-color: rgb(76, 76, 76); 
     border: 0; 
     border-radius: 2px;
+}
+h6{
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    color: gray;
+    padding-bottom: 15px;
+    bottom: 0%;
+    margin-bottom: 0;
+    width:100%; 
+}
+a{
+    color: gray;
 }
