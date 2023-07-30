@@ -7,13 +7,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>URL Viewer</h1>
+  <h1>Blocked URL Viewer</h1>
   <label for="urlInput">Gib eine URL ein:</label>
   <input type="text" id="urlInput">
   <button onclick="showInIframe()">Anzeigen</button>
   <br>
   <iframe src="" id="urlIframe" style="position:fixed; top:10; left:0; bottom:0; right:0; width:600; height:600; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
-
   <script>
     function showInIframe() {
       const url = document.getElementById("urlInput").value;
@@ -72,4 +71,7 @@
     });
   </script>
 </body>
+<footer>    
+  <h6> <br>Almar_Block <span style="margin-left: 50px; margin-right: -10px"></span><a href="https://github.com/AlmarBlock/Blocked_URL_Viewer">GitHub</a><span style="margin-left: 50px; margin-right: -10px"></span> Mail: almarblock@gmail.com <br>  </h6>
+</footer>
 </html>
