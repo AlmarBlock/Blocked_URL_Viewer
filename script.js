@@ -26,11 +26,14 @@
     function setIFrame(input) 
     {
       const iframe = document.getElementById("urlIframe");
+      const div = document.getElementById("BlackDIV");
       iframe.src = (input);
       iframe.style.width = "100%";
       iframe.style.height = "100%";
       iframe.style.zIndex = "999999";
       iframe.style.top = "0px";
+      div.style.zIndex = "999998";
+      div.style.backgroundColor = "black";
       history.pushState({}, null, "");
     }
 
@@ -46,11 +49,22 @@
       return urlPattern.test(input);
     }
     
+    function reset()
+    {
+        for(let i = 0; i < 2; i++)
+        {
+            const iframe = document.getElementById("urlIframe");
+            const div = document.getElementById("BlackDIV");
+            iframe.style.width = "0px";
+            iframe.style.height = "0px";
+            iframe.style.top = "10px";
+            iframe.zIndex = "-1"
+            iframe.src = "";
+            div.style.zIndex = "-1";
+            div.style.backgroundColor = "rgb(122, 122, 122)";
+        }
+    }
+    
     window.addEventListener("popstate", function(event) {
-      const iframe = document.getElementById("urlIframe");
-      iframe.style.width = "0px";
-      iframe.style.height = "0px";
-      iframe.style.top = "10px";
-      iframe.zIndex = "-1"
-      iframe.src = "";
+        reset();
     });
