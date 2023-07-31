@@ -37,6 +37,11 @@ h6{
 }
 a{
     color: gray;
+    font-size: 24px;
+}
+a:hover{
+    color: white;
+    font-size: 24px;
 }
 iframe{
     position:fixed; 
