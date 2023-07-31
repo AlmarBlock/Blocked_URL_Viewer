@@ -9,7 +9,7 @@ Diese Webseite ermöglichst dir Webseiten anzuschauen, die anderer seits in dein
 ## *Fehler, und wie man sie behebt:*
 * ```Bitte gib eine gültige HTTPS-URL ein. Veruche vieleicht ein Https:// vor deine URL zu setzen.``` Solten du diese Fehlermeldung bekommen, überprüfe, ob die URL mit ```http/https``` begint, und ob sie richtig geschriben ist.
 * ```{WEBSEITE} hat die Verbindung abgelehnt.``` bedeutet, dass diese Webseite nicht entspert werden kann, da sie sich selber dagegen geschutzt hat.
-* ```Die Server-IP-Adresse von {WEBSEITE} wurde nicht gefunden.```
+* ```Die Server-IP-Adresse von {WEBSEITE} wurde nicht gefunden.``` wird angezeigt, wenn die URL entweder falsch geschriben, oder nicht exestiert.
 
 ## *Limitationen:*
 * Nicht alle Webseiten sind erreichbar, da die Websiten Administratoren diese, für einen zugang über die hier verwendete Metode geblocked haben, dazu zählen auch bekante Webseiten, wie z.B. Google.com
@@ -19,6 +19,5 @@ Diese Webseite ermöglichst dir Webseiten anzuschauen, die anderer seits in dein
 
 ## *Getestede Anbieter:*
 * Comming Soon
-
 
 *es ist noch bei keinen getested worden. 
