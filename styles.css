@@ -34,14 +34,15 @@ h6{
     bottom: 0%;
     margin-bottom: 0;
     width:100%; 
+    font-size: 14px;
 }
 a{
     color: gray;
-    font-size: 24px;
+    font-size: 14px;
 }
 a:hover{
     color: white;
-    font-size: 24px;
+    font-size: 14px;
 }
 iframe{
     position:fixed; 
