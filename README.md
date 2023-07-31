@@ -8,13 +8,17 @@ Diese Webseite ermöglichst dir Webseiten anzuschauen, die anderer seits in dein
 
 ## *Fehler, und wie man sie behebt:*
 * ```Bitte gib eine gültige HTTPS-URL ein. Veruche vieleicht ein Https:// vor deine URL zu setzen.``` Solten du diese Fehlermeldung bekommen, überprüfe, ob die URL mit ```http/https``` begint, und ob sie richtig geschriben ist.
-* ```{Webseite} hat die Verbindung abgelehnt.``` bedeutet, dass diese Webseite nicht entspert werden kann, da sie sich selber dagegen geschutzt hat.
+* ```{WEBSEITE} hat die Verbindung abgelehnt.``` bedeutet, dass diese Webseite nicht entspert werden kann, da sie sich selber dagegen geschutzt hat.
+* ```Die Server-IP-Adresse von {WEBSEITE} wurde nicht gefunden.```
 
 ## *Limitationen:*
-* nicht alle Webseiten sind erreichbar, da die Websiten Administratoren diese, für einen zugang über die hier verwendete Metode geblocked haben, dazu zählen auch bekante Webseiten, wie z.B. Google.com
-* es ist nicht bei allen anbietern getested, die eine Blockade für bestimte Domains in einem Netzwerk anbieten.*
+* Nicht alle Webseiten sind erreichbar, da die Websiten Administratoren diese, für einen zugang über die hier verwendete Metode geblocked haben, dazu zählen auch bekante Webseiten, wie z.B. Google.com
+* Es ist nicht bei allen anbietern getested, die eine Blockade für bestimte Domains in einem Netzwerk anbieten.*
+* Wenn man eine langsame Internet verbindung hat, wird kein ladebalken für den fortschrit der Webseite angezeigt.
+![ladebalken](https://github.com/AlmarBlock/Blocked_URL_Viewer/assets/98546933/455e839c-f82c-47e6-a0e8-eb40002db5cf)
 
 ## *Getestede Anbieter:*
 * Comming Soon
+
 
 *es ist noch bei keinen getested worden. 
