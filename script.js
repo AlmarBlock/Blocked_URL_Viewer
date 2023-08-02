@@ -27,6 +27,7 @@ function setIFrame(input)
 {
   const iframe = document.getElementById("urlIframe");
   const div = document.getElementById("BlackDIV");
+  const info = document.getElementById("infoarea");
   iframe.src = (input);
   iframe.style.width = "100%";
   iframe.style.height = "100%";
@@ -34,6 +35,7 @@ function setIFrame(input)
   iframe.style.top = "0px";
   div.style.zIndex = "999998";
   div.style.backgroundColor = "black";
+  info.style.display = 'none'
   history.pushState({}, null, "");
 }
 
