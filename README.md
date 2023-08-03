@@ -16,6 +16,7 @@ Diese Webseite ermöglichst dir Webseiten anzuschauen, die anderer seits in dein
 * Es ist nicht bei allen anbietern getested, die eine Blockade für bestimte Domains in einem Netzwerk anbieten.*  Weite funktionierende Anbieter bitte auf <a href="https://github.com/AlmarBlock/Blocked_URL_Viewer/issues">GitHub</a> melden.
 * Wenn man eine langsame Internet verbindung hat, wird kein ladebalken für den fortschrit der Webseite angezeigt.
 ![ladebalken](https://github.com/AlmarBlock/Blocked_URL_Viewer/assets/98546933/455e839c-f82c-47e6-a0e8-eb40002db5cf)
+* Websieten, die Links zu anderen Webseiten haben, öffnen diese in einen neuen Tab.
 
 ## *Getestede Anbieter:*
 * Comming Soon
