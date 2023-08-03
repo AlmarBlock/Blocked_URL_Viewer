@@ -2,7 +2,7 @@
 
 Diese Webseite ermöglicht es dir Webseiten anzuschauen, die andererseits in deinem Netzwerk geblockt sind.
 
-## *Quickstart guide::*
+## *Quickstart guide:*
 * gebe in dem Feld, hinter ```Gib eine URL ein:``` die URL ein, die du entblocken willst. (Dabei ist zu beachten, dass die Domain immer mit ```http/https``` anfangen muss.)
 * Nun musst du nur noch auf Anzeigen klicken, und deine Webseite sollte entblockt sein.
 
