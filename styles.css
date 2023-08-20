@@ -6,107 +6,335 @@ body{
     margin: 0px;
     text-decoration: none;
     font-size: 24px;
+    z-Index: 0px;
+}
+ul{
+    color: rgb(29, 150, 93);
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+li{
+    margin-right: 20px;
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    padding: 10px;
+}
+nav a:first-child{
+    margin-left: 0px;
+}
+nav a:hover{
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    color: black;
+}
+@media screen and (max-width: 470px) {
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        margin-left: 20px;
+        padding: 5px;
+    }
+    nav a:first-child{
+        margin-left: 0px;
+    }
+    nav a:hover{
+        background-color: white;
+        border-radius: 3px;
+        padding: 5px;
+        color: black;
+    }
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+}
+header{
+    background: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+
+.sozialmedia figcaption:hover{
+    background-color: white;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 20px;
+    color: black;
+}
+.sozialmedia figcaption{
+    padding: 10px;
+    font-size: 24px;
+    margin: 20px;
+}
+.sozialmediamobile figcaption:hover{
+    background-color: white;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 20px;
+    color: black;
+}
+.sozialmediamobile figcaption{
+    padding: 10px;
+    font-size: 24px;
+    margin: 20px;
+}
+.sozialmedia{
+display: flex;
+text-align: center;
+padding: 20px;
+flex-direction: row;
+}
+.sozialmedia figure{
+margin: auto;
+width: 200px;
+}
+.sozialmedia figure img{
+    margin: auto;
+}
+.sozialmedia figure a{
+    color: white;
+    text-decoration-color: white;
+}
+@media screen and (max-width: 720px) {
+         .sozialmedia{
+        display: none;
+        }
+        .sozialmediamobile{
+            text-align: center;
+            }
+        .sozialmediamobile figure{
+             margin: auto;
+              width: 200px;
+        }
+        .sozialmediamobile figure img{
+            margin: auto;
+        }
+        .sozialmediamobile figure a{
+            color: white;
+            text-decoration-color: white;
+        }
+        
+}@media screen and (min-width: 720px) {
+    .sozialmediamobile{
+        display: none;
+        }       
+}
+
+
+
+.banner{
+    background-image: url("images/banner.png");
+    height: 300px;
+    background-size:  100%;
+    background-position:  center;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1;
+}
+
+ @media screen and (max-width: 800px) {
+    .banner{
+        background-image: url("images/banner.png");
+        height: 250px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+ }
+@media screen and (max-width: 670px) {
+    .banner{
+        background-image: url("images/banner.png");
+        height: 170px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+}
+
+
+.minecraft{
+    background-image: url("images/minecraft.jpg");
+    height: 300px;
+    background-size:  100%;
+    background-position:  center;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1;
+}
+ @media screen and (max-width: 800px) {
+    .minecraft{
+        background-image: url("images/minecraft.jpg");
+        height: 250px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+}
+@media screen and (max-width: 670px) {
+    .minecraft{
+        background-image: url("images/minecraft.jpg");
+        height: 160px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+}
+
+
+.contact{
+    background-image: url("images/contact.png");
+    height: 300px;
+    background-size:  100%;
+    background-position:  center;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1;
+}
+
+ @media screen and (max-width: 800px) {
+    .contact{
+        background-image: url("images/contact.png");
+        height: 250px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+ }
+@media screen and (max-width: 670px) {
+    .contact{
+        background-image: url("images/contact.png");
+        height: 165px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+}
+
+
+.games{
+    background-image: url("images/games.png");
+    height: 300px;
+    background-size:  100%;
+    background-position:  center;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1;
+}
+
+ @media screen and (max-width: 800px) {
+    .games{
+        background-image: url("images/games.png");
+        height: 250px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+ }
+@media screen and (max-width: 670px) {
+    .games{
+        background-image: url("images/games.png");
+        height: 165px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+}
+
+
+.discord-banner{
+    background-image: url("images/discord-banner.png");
+    height: 300px;
+    background-size:  100%;
+    background-position:  center;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1;
+}
+
+ @media screen and (max-width: 800px) {
+    .discord-banner{
+        background-image: url("images/discord-banner.png");
+        height: 250px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+ }
+@media screen and (max-width: 670px) {
+    .discord-banner{
+        background-image: url("images/discord-banner.png");
+        height: 165px;
+        background-size:  100%;
+        background-position:  center;
+        padding: 0px;
+        margin: 0px;
+        text-shadow: 1;
+}
+}
+
+
+iframe{
+    height: 90%;
+    text-align: center;
+    width: 90%;
+    background-position: center;
+    display: flex;
+    margin: auto;
+}
+@media screen and (max-width: 1080){
+    iframe{
+        height: 50%;
+        text-align: center;
+        width: 90%;
+        background-position: center;
+        display: flex;
+        margin: auto;
+    }
+}
+h4{
     text-align: center;
 }
-input{
-    margin-bottom: 6px;
-    font-size: 24px;
-    height: 30px;
-    color: white;
-    background-color: rgb(76, 76, 76); 
-    border: 0; 
-    border-radius: 2px;
+h5{
+    text-align: center;
+    margin: 1px;
 }
-button{
-    margin-bottom: 6px;
-    font-size: 24px;
-    height: 30px;
-    color: white;
-    background-color: rgb(76, 76, 76); 
-    border: 0; 
-    border-radius: 2px;
-}
-h6{
-    position: fixed;
+footer{
     text-align: center;
     background-color: black;
     color: gray;
-    padding-bottom: 15px;
-    bottom: 0%;
-    margin-bottom: 0;
-    width:100%; 
-    font-size: 14px;
+    padding-bottom: 1px;
 }
-a{
-    color: gray;
-    font-size: 14px;
+.fist-description{
+    margin-bottom: 10px;
 }
-a:hover{
-    color: white;
-    font-size: 14px;
-}
-iframe{
-    position:fixed; 
-    top:10; 
-    left:0; 
-    bottom:0; 
-    right:0; 
-    width:0; 
-    height:0; 
-    border:none; 
-    margin:0; 
-    padding:0; 
-    overflow:hidden;
-    z-index: -1;
-}
-div{
-    position:fixed; 
-    top:0; 
-    left:0; 
-    bottom:0; 
-    right:0; 
-    width:600; 
-    height:600; 
-    border:none; 
-    margin:0; 
-    padding:100%; 
-    overflow:hidden;
-    z-index: -2;
-    background-color: rgb(122, 122, 122);
-}
-#infoarea {
-    display: none;
-}
-info{
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-code{
-    background-color: rgb(59, 59, 59);
-    border-radius: 7px;
-    padding: 0.125rem 0.25rem;
-    text-decoration: dotted;
-}
-h1{
-    text-decoration: underline;
-}
-h3{
-    font-style: italic;
-    margin-bottom: 7px;
-    font-size: 30px;
-}
-footnote{
-    font-size: 12px;
-}
-img{
-    margin-top: -20px;
-    width: 96.5%;
-    height: auto;
-    margin-left: 19px;
-}
-list {
-    font-size: 20px;
-    display: list-item;
-    margin-left : 1em;
+iframe .youtubevideo{
+    position: relative;
+    aspect-ratio: 1 / 1;
+
 }
