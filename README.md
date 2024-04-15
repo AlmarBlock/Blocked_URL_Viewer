@@ -1,3 +1,6 @@
+***Disclaimer:***
+Dieses Projekt wurde von mir nie auf reale Funktionalität getestet und diente eher als kleine Lernübung. Daher wird es auch nicht weiterentwickelt.
+
 # <ins>Blocked URL Viewer</ins>
 
 Diese Webseite ermöglicht es dir Webseiten anzuschauen, die andererseits in deinem Netzwerk geblockt sind.
